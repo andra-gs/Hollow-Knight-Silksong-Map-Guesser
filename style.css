@@ -1,0 +1,104 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Trajan Pro Bold';
+    background-color: #000;
+}
+
+#prtm{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("image/Menu_Theme_Cradle.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* biar tetap full saat scroll */
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu img{
+    max-width: 500px;
+    margin-bottom: 100px;
+     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+}
+
+.btn {
+    display: flex;
+    flex-direction: column; /* buat tombol jadi vertikal */
+    gap: 20px; /* jarak antar tombol */
+    letter-spacing: 3px;
+}
+
+.btn a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 14px 60px;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.btn a::before {
+    content: "◀";
+    position: absolute;
+    left: 15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.btn a::after {
+    content: "▶";
+    position: absolute;
+    right: 15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.btn a:hover {
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    transform: translateY(-2px);
+}
+
+.btn a:hover::before,
+.btn a:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#kdw{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("image/Menu_Theme_Cradle.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* biar tetap full saat scroll */
+}
+
+.krdtbox {
+    background-color: aliceblue;
+    height: 500px;
+    width: 800px;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    background: rgba(51, 51, 51, 0.322);
+}
+
+.krdtbox h1::first-letter{
+    font-size: 30px;
+}
+
+.krdtbox h1{
+    font-size: 20px;
+}
