@@ -92,13 +92,19 @@ html, body {
     overflow: hidden;
     backdrop-filter: blur(4px);
     border-radius: 5px;
-    background: rgba(51, 51, 51, 0.322);
+    background: rgba(0, 0, 0, 0.534);
+    padding: 1px 20px 10px 30px;
 }
 
 .krdtbox h1::first-letter{
-    font-size: 30px;
+    font-size: 60px;
 }
 
 .krdtbox h1{
+    text-align: center;
+}
+
+.krdtbox{
     font-size: 20px;
+    color: white;
 }
