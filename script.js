@@ -1,7 +1,7 @@
 const screenshots = [
-  { src: "image/ss1.jpg", x: 150, y: 220 },
-  { src: "image/ss2.jpg", x: 300, y: 100 },
-  { src: "image/ss3.jpg", x: 90, y: 340 }
+  { src: "image/image.png", x: 150, y: 220 },
+  { src: "image/image.png", x: 300, y: 100 },
+  { src: "image/image.png", x: 90, y: 340 }
 ];
 
 const screenshotImg = document.getElementById("screenshot-img");
@@ -49,3 +49,4 @@ nextBtn.addEventListener("click", () => {
 });
 
 loadScreenshot();
+
